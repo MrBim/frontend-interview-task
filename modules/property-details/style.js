@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const AccountList = styled.ul`
   list-style: none;
   padding-left: 0;
+  width: 100%;
 `;
 
 export const AccountLabel = styled.div`
@@ -43,6 +44,24 @@ export const AccountListItem = styled.div`
   }
 `;
 
+export const SpreadAccountListItem = styled(AccountListItem)`
+  justify-content: space-between;
+  flex-wrap: wrap;
+`
+
 export const Inset = styled.div`
   padding: 0 ${(props) => props.theme.space.m};
+`;
+
+
+export const BluePill = styled.div`
+  background-color:  ${(props) => props.theme.colors.primary.light};
+  border-radius: 13px;
+  padding: 2px 16px;
+  margin-left: auto;
+  color: ${(props) => props.theme.colors.neutral['900']}
+`;
+
+export const AddWeight = styled.span`
+  font-weight: 600;
 `;
